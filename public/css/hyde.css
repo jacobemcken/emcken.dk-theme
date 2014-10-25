@@ -13,6 +13,74 @@
  * https://github.com/poole/hyde.
  */
 
+/*
+ * Specifics for emcken.dk
+ */
+
+@font-face {
+    font-family: 'socicon';
+    src: url('../font/socicon-webfont.eot');
+    src: url('../font/socicon-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/socicon-webfont.woff') format('woff'),
+         url('../font/socicon-webfont.ttf') format('truetype'),
+         url('../font/socicon-webfont.svg#sociconregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.social-icons {
+    font-family: 'socicon' !important;
+    font-size: 1.5em !important;
+}
+
+.social-icons a {
+    margin: 0.3em;
+}
+
+.sidebar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sidebar {
+  background-image: url('/public/vertical_cloth.png');
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 48em),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 48em),
+only screen and (   -min-moz-device-pixel-ratio: 2)      and (min-width: 48em),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 48em),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 48em),
+only screen and (                min-resolution: 192dpi) and (min-width: 48em),
+only screen and (                min-resolution: 2dppx)  and (min-width: 48em) {
+  .sidebar {
+    background-image: url('/public/vertical_cloth_@2X.png');
+  }
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+  width: 40%;
+  float: left;
+}
+
+.sidebar-sticky {
+  margin: 0;
+  padding: 0;
+  width: 60%;
+  float: left;
+}
+@media (min-width: 48em) {
+  .logo {
+    width: 100%;
+  }
+  .sidebar-sticky {
+    width: 100%;
+  }
+}
+
 
 /*
  * Contents

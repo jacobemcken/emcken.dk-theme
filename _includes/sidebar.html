@@ -1,17 +1,21 @@
 <div class="sidebar">
+
+  <div class="logo">
+    <img src="/public/Jacob Emcken transparent.svg" style="width: 100%; height: auto; float:left;" />
+  </div>
+
   <div class="container sidebar-sticky">
+
     <div class="sidebar-about">
       <h1>
         <a href="{{ site.baseurl }}">
           {{ site.title }}
         </a>
       </h1>
-      <p class="lead">{{ site.description }}</p>
+      <p class="lead">{{ site.tagline }}</p>
     </div>
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
-
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
         `layout: page` in the front-matter. See readme for usage.
@@ -25,12 +29,13 @@
           {% endif %}
         {% endif %}
       {% endfor %}
-
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a>
-      <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>
-      <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
     </nav>
 
-    <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/pub/1/61/280">j</a>
+      <a href="https://github.com/jacobemcken">Q</a>
+      <a href="https://twitter.com/jacobemcken">a</a>
+      <a href="https://plus.google.com/+JacobEmcken/posts">c</a>
+    </div>
   </div>
 </div>
